@@ -1,0 +1,179 @@
+/* 
+Guía de Estilos
+
+Tipografías:
+● Cabin
+● Lobster
+font-family: 'Cabin', sans-serif;
+font-family: 'Lobster', cursive;
+
+Google Fonts
+Weight:
+● Cabin Regular (400)
+● Cabin Bold (700)
+● Lobster Regular (400)
+
+Colores
+● #373a3c
+● #dddddd
+● #000 o var(--black)
+● #fff o var(--white)
+● #dc3545 o var(--danger)
+
+*/
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Cabin", sans-serif;
+}
+
+/* SECCION NAVBAR*/
+
+nav {
+  background-color: #373a3c;
+  color: #ffffff;
+}
+
+.navbar-brand {
+  font-family: "Lobster", cursive;
+  font-weight: 400;
+  font-size: 2.313em;
+}
+
+.navbar-position {
+  display: flex !important;
+  justify-content: space-around !important;
+}
+
+/* SECCION INICIO-HEADER */
+
+.div-inicio {
+  display: flex;
+  flex-direction: column;
+}
+
+.div-inicio p {
+  text-align: center;
+  font-weight: 700;
+  font-size: 1.2em;
+}
+
+.img-inicio {
+  width: 100%;
+  height: auto;
+  border-radius: 1%;
+}
+
+.div-tituloInicio {
+  display: flex;
+  justify-content: center;
+}
+
+.div-tituloInicio h1 {
+  width: 70%;
+  font-weight: 700;
+  text-align: center;
+  color: #373a3c;
+}
+
+/* BOTONES */
+
+.div-botones {
+  text-align: center;
+}
+
+.div-botones button {
+  border: 1px solid #dddddd;
+}
+
+/* RECETAS{INGREDIENTES Y PREPARACION}*/
+
+.ingredientes {
+  border: 1px solid red;
+}
+
+.preparacion {
+  border: 1px solid blue;
+}
+
+/* TARJETAS */
+.titulo-tarjetas {
+  text-align: center;
+  font-weight: 700;
+}
+
+.div-tarjetas .columnas {
+  display: flex;
+  justify-content: center;
+}
+
+.tituloCard {
+  font-weight: 700;
+}
+
+/* FOOTER */
+
+.div-footer {
+  background-color: #dc3545;
+  color: #fff;
+}
+
+.div-footer h1 {
+  font-weight: 700;
+}
+
+.div-footer p {
+  font-size: 1.25em;
+}
+
+.div-footerlogo {
+  font-family: "Lobster", cursive;
+  background-color: #373a3c;
+  color: #fff;
+}
+
+.div-footerlogo h1 {
+  font-size: 2.3em;
+  padding: 1em;
+  text-align: center;
+}
+
+.newsletter {
+  padding: 8em 4em;
+}
+
+.botonComenzar {
+  width: 100%;
+  color: #fff;
+  border-color: #fff;
+}
+
+.botonComenzar:focus {
+  color: #fff;
+}
+
+/* OTHER */
+
+.separador {
+  opacity: 1;
+  margin: 5% 10%;
+}
+
+.ricomida {
+  font-family: "Lobster", cursive;
+}
+
+.carrusel {
+  display: none;
+}
+
+@media (min-width: 992px) {
+  .separador {
+    display: none;
+  }
+
+  .carrusel {
+    display: none;
+  }
+}
