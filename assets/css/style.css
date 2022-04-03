@@ -89,12 +89,25 @@ nav {
 
 /* RECETAS{INGREDIENTES Y PREPARACION}*/
 
-.ingredientes {
-  border: 1px solid red;
+.tituloReceta {
+  margin-bottom: 2em;
 }
 
-.preparacion {
-  border: 1px solid blue;
+.div-ingredientes {
+  text-align: left;
+}
+
+.div-ingredientes ul {
+  list-style: none;
+  padding: 0;
+}
+
+.div-ingredientes li p {
+  margin: 0;
+}
+
+.div-recetas {
+  border: 1px solid red;
 }
 
 /* TARJETAS */
@@ -137,6 +150,7 @@ nav {
   font-size: 2.3em;
   padding: 1em;
   text-align: center;
+  font-weight: 400;
 }
 
 .newsletter {
@@ -157,7 +171,7 @@ nav {
 
 .separador {
   opacity: 1;
-  margin: 5% 10%;
+  margin: 1em 8%;
 }
 
 .ricomida {
@@ -168,12 +182,81 @@ nav {
   display: none;
 }
 
+.middle {
+  display: none;
+}
+
+
 @media (min-width: 992px) {
-  .separador {
+
+  .navbar-position {
+    display: flex !important;
+    justify-content: space-around !important;
+    padding: 0% 10em;
+  }
+
+  .navbar-collapse {
+    justify-content: flex-end;
+  }
+
+
+  .div-inicio p {
+    text-align: left;
+  }
+
+  .separadorInicio {
+    background-color: black;
+    opacity: 1;
+    width: 90%;
+  }
+
+  .div-tituloInicio {
+    justify-content: left;
+  }
+
+  .div-tituloInicio h1 {
+    text-align: left;
+  }
+
+  .div-botones {
+    text-align: left;
+  }
+
+  .div-botones .btn {
+    font-size: 1em;
+  }
+
+
+  /*  CARRUSEL */
+
+  .carrusel {
+    display: flex;
+  }
+
+  .div-carrusel {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .indicadores {
+    position: inherit;
+    margin-top: 1em;
+  }
+
+
+  /* SEPARADORES*/
+  .top {
     display: none;
   }
 
-  .carrusel {
-    display: none;
+  .middle {
+    display: block;
+
   }
+
+  .tituloReceta {
+    margin-bottom: 2em;
+    text-decoration: underline;
+  }
+
 }
